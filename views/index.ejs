@@ -1,8 +1,57 @@
 <!DOCTYPE html>
 <html>
   <% include common/header.ejs %>
+  
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  	<div id="wrapper">
+ 		<!--<%include common/topnav.ejs %>-->
+    	<% include common/sidebar.ejs %>
+
+	    <div id="page-content-wrapper">
+	    	<div class="container">
+	    		<div class="row">
+	    			<div class="col-lg-12">
+	    				<a herf="#" class="btn btn-success" id="menu-toggle">Toggle menu</a>
+	    				<h1>Sidebar layouts are cool</h1>
+	    				<p>lorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametvlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit ametlorem ipsum dolar sit amet
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+  	</div>
+
+    <script>
+    	$("#sidenar-toggle").click( function(e){
+    		e.preventDefault();
+    		$("#wrapper").toggleClass("menuDisplayed");
+	</script>
+
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

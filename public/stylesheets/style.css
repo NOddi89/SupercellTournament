@@ -1,8 +1,89 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* COLORS *
+#E94C6F - pink
+#542733 - purple
+#596961 - dark graygreen
+#C6D5CD - light graygreen
+#FDF200 - yellow
+*/
+
+body{
+	/*padding-top: 51px;*/
 }
 
-a {
-  color: #00B7FF;
+
+/* ------------------- Top nav ---------------------*/
+@media (min-width: 768px)
+{
+	.navbar-padding{
+		padding-left: 235px;
+	}
 }
+
+
+/* ------------------- Sidebar ---------------------*/
+#sidebar-wrapper{
+	z-index: 1;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	overflow-y: hidden;
+	background: #5A6A62; 
+	opacity: 0.9;
+}
+
+/* Main content */
+#page-content-wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 15px;
+	background: #C6D5CD;
+}
+
+/* Change the width of the sidebar to display it */
+#wrapper.menuDisplayed #sidebar-wrapper{
+	width: 250px;
+} 
+
+#wrapper.menuDisplayed #page-content-wrapper{
+	padding-left: 250px;
+}
+
+.sidebar-nav{
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li{
+	text-indent: 40px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.sidebar-nav li a:hover{
+	background: #2f3733;
+	color: #fff; 
+	border-left: 4px solid #FDF200
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
