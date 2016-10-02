@@ -4,75 +4,98 @@
 #596961 - dark graygreen
 #C6D5CD - light graygreen
 #FDF200 - yellow
+
+#EF6461 - pastel red
+#E4B363 - earth yellow
+#E8E9EB - platinum
+#E0DFD5 - gainsboro
+#313638 - onyx
 */
 
+
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,100);
+
 body{
-	/*padding-top: 51px;*/
+	font-family: Roboto;
 }
 
 
-/* ------------------- Top nav ---------------------*/
-@media (min-width: 768px)
-{
-	.navbar-padding{
-		padding-left: 235px;
-	}
+/* ------------------- Topbar ---------------------*/
+.topbar{
+	width: 100%;
+	height: 48px;
+	background-color: #E8E9EB;
 }
+
+.topbar .container{
+	padding: 0;
+	margin: 0;
+	
+}
+
+.topbar i{
+	position: relative;
+	transform: translateY(40%);
+	padding-left: 24px; 
+	color: #313638;
+}
+
 
 
 /* ------------------- Sidebar ---------------------*/
 #sidebar-wrapper{
 	z-index: 1;
 	position: absolute;
-	width: 0;
+	width: 48px;
 	height: 100%;
 	overflow-y: hidden;
-	background: #5A6A62; 
-	opacity: 0.9;
-}
+	background: #313638;
 
-/* Main content */
-#page-content-wrapper{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	padding: 15px;
-	background: #C6D5CD;
 }
 
 /* Change the width of the sidebar to display it */
-#wrapper.menuDisplayed #sidebar-wrapper{
+#wrapper.sidebarDisplayed #sidebar-wrapper{
 	width: 250px;
 } 
 
-#wrapper.menuDisplayed #page-content-wrapper{
+#wrapper.sidebarDisplayed #page-content-wrapper{
 	padding-left: 250px;
 }
 
 .sidebar-nav{
 	padding: 0;
-	list-style: none;
 }
 
 .sidebar-nav li{
-	text-indent: 40px;
 	line-height: 40px;
+	white-space: nowrap;
 }
 
 .sidebar-nav li a{
-	display: block;
 	text-decoration: none;
-	color: #000;
+	color: #E8E9EB;
+	font-size: 18px;
 }
 
-.sidebar-nav li a:hover{
-	background: #2f3733;
-	color: #fff; 
-	border-left: 4px solid #FDF200
+.sidebar-nav a:before
+{
+	content: "#";
+	padding-right: 32px;
+	padding-left: 20px;
 }
 
 
-
+/* --------------- Main content -------------------*/
+#page-content-wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin-left: 48px;
+	padding: 15px;
+	background: #E0DFD5;
+}
 
 
 
