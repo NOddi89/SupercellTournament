@@ -1,19 +1,20 @@
 <div id="sidebar-wrapper">
+
+	<ul class="sidebar-nav">
+		<li><a class="home-icon" href="/">Home</a></li>
+		<% if(loggedIn){ %>	
+	    	<li><a class="dashboard-icon" href="/dashboard">Dashboard</a></li>
+	    <% } %>
+	    <li><a class="forum-icon" href="#">Forum</a></li>
+	</ul>
+
 	<div class="sidebar-content">
 
-		<ul class="sidebar-nav">
-	    	<li><a href="#">Dashboard</a></li>
-	    </ul>
-<!--
-		<ul class="sidebar-nav">
-			<li><span class="glyphicon glyphicon-globe"></span><a href="#">Dashboard</a></li>
-			<li><span class="glyphicon glyphicon-book"></span><a href="#">Forum</a></li>
-		</ul> -->
+
+
 	</div>
 <!--
 	
-	
-
 	<h1>Welcome</h1>
 	<p>Please create an account to join this awsome tournament community!</p>
 

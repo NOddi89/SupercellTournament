@@ -21,27 +21,31 @@ body{
 	font-family: Roboto;
 }
 
+p{
+	word-wrap: break-word;
+}
+
 
 /* ------------------- Topbar ---------------------*/
-.topbar{
+#topbar{
 	width: 100%;
 	height: 48px;
 	background-color: #E8E9EB;
 }
 
-.topbar .container{
+#topbar .container {
 	padding: 0;
 	margin: 0;
+	position: relative;
+	transform: translateY(20%);
 	
+
 }
 
-.topbar i{
-	position: relative;
-	transform: translateY(40%);
+#topbar i{
 	padding-left: 24px; 
 	color: #313638;
 }
-
 
 
 /* ------------------- Sidebar ---------------------*/
@@ -52,7 +56,7 @@ body{
 	height: 100%;
 	overflow-y: hidden;
 	background: #313638;
-
+	transition: 0.4s;
 }
 
 /* Change the width of the sidebar to display it */
@@ -65,25 +69,47 @@ body{
 }
 
 .sidebar-nav{
+	width: 100%;
 	padding: 0;
 }
 
 .sidebar-nav li{
+	width: 100%;
 	line-height: 40px;
 	white-space: nowrap;
+	
 }
 
 .sidebar-nav li a{
+	width: 100%;
+	height: 100%;
 	text-decoration: none;
+	display: inline-block;
 	color: #E8E9EB;
 	font-size: 18px;
 }
 
 .sidebar-nav a:before
 {
-	content: "#";
+	font-family: FontAwesome;
+	font-size: 1.5em;
 	padding-right: 32px;
-	padding-left: 20px;
+	padding-left: 10px;
+}
+
+.sidebar-nav a.dashboard-icon:before
+{
+	content: "\f0e4";
+}
+
+.sidebar-nav a.forum-icon:before
+{
+	content: "\f086";
+}
+
+.sidebar-nav a.home-icon:before
+{
+	content: "\f015";
 }
 
 
@@ -95,6 +121,7 @@ body{
 	margin-left: 48px;
 	padding: 15px;
 	background: #E0DFD5;
+	transition: 0.4s;
 }
 
 
