@@ -69,6 +69,13 @@ router.post('/login', passport.authenticate('local-login', {
 }));
 
 
+/* GET clan page. */
+router.get('/clan', isLoggedIn, function(req, res) {
+  res.render('clan', { title: 'Clan', user: req.user, loggedIn: loggedIn });
+});
+
+
+
 
 /* Logout. */
 router.get('/logout', function(req, res) {

@@ -112,6 +112,12 @@ p{
 	content: "\f015";
 }
 
+.sidebar-nav a.clan-icon:before
+{
+	content: "\f132";
+	padding-left: 14px;
+}
+
 
 /* --------------- Main content -------------------*/
 #page-content-wrapper{
